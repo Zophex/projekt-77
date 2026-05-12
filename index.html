@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mnożenie</title>
+</head>
+<body>
+
+    <input type="text" id="1">
+    <input type="text" id="2">
+
+    <input type="submit" value="sprawdź" onclick="sprawdz()">
+
+    <div id="wynik"></div>
+
+    <script>
+        function sprawdz() {
+
+            let liczba = Number(document.getElementById("1").value);
+            let liczbadwa = Number(document.getElementById("2").value);
+
+            let wynik = liczba * liczbadwa;
+
+            document.getElementById("wynik").innerHTML = wynik;
+        }
+    </script>
+
+</body>
+</html>
